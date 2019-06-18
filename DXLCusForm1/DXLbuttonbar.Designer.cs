@@ -36,7 +36,7 @@
             this.F5 = new System.Windows.Forms.Button();
             this.F6 = new System.Windows.Forms.Button();
             this.F7 = new System.Windows.Forms.Button();
-            this.Plus = new System.Windows.Forms.Button();
+            this.Ins = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbInfo
@@ -137,25 +137,25 @@
             this.F7.UseVisualStyleBackColor = false;
             this.F7.Click += new System.EventHandler(this.F7_Click);
             // 
-            // Plus
+            // Ins
             // 
-            this.Plus.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Plus.ForeColor = System.Drawing.Color.White;
-            this.Plus.Location = new System.Drawing.Point(258, 38);
-            this.Plus.Name = "Plus";
-            this.Plus.Size = new System.Drawing.Size(75, 23);
-            this.Plus.TabIndex = 9;
-            this.Plus.Text = "Plus";
-            this.Plus.UseVisualStyleBackColor = false;
-            this.Plus.Click += new System.EventHandler(this.Plus_Click);
+            this.Ins.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Ins.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Ins.ForeColor = System.Drawing.Color.White;
+            this.Ins.Location = new System.Drawing.Point(258, 38);
+            this.Ins.Name = "Ins";
+            this.Ins.Size = new System.Drawing.Size(75, 23);
+            this.Ins.TabIndex = 9;
+            this.Ins.Text = "Ins";
+            this.Ins.UseVisualStyleBackColor = false;
+            this.Ins.Click += new System.EventHandler(this.Ins_Click);
             // 
             // DXLbuttonbar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(342, 70);
-            this.Controls.Add(this.Plus);
+            this.Controls.Add(this.Ins);
             this.Controls.Add(this.F7);
             this.Controls.Add(this.F6);
             this.Controls.Add(this.F5);
@@ -184,6 +184,6 @@
         private System.Windows.Forms.Button F5;
         private System.Windows.Forms.Button F6;
         private System.Windows.Forms.Button F7;
-        private System.Windows.Forms.Button Plus;
+        private System.Windows.Forms.Button Ins;
     }
 }

@@ -95,9 +95,9 @@ namespace DXLog.net
             mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessage7 : _cdata.dalHeader.SP_CWMessage7, _cdata.FocusedRadio, true);
         }
 
-        private void Plus_Click(object sender, EventArgs e)
+        private void Ins_Click(object sender, EventArgs e)
         {
-            mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessagePLUS : _cdata.dalHeader.SP_CWMessagePLUS, _cdata.FocusedRadio, true);
+            mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessageINS : _cdata.dalHeader.SP_CWMessageINS, _cdata.FocusedRadio, true);
         }
     }
 }
