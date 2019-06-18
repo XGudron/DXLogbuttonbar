@@ -1,25 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using DXLog.net;
 
 namespace DXLog.net
 {
-    public partial class CusFrmTest1 : KForm
+    public partial class DXLbuttonbar : KForm
     {
         public static String CusWinName
         {
-            get { return "My custom form"; }
+            get { return "CW button bar"; }
         }
 
         public static Int32 CusFormID
         {
-            get { return 1000; }
+            get { return 1004; }
         }
         
         private ContestData _cdata = null;
@@ -29,12 +22,12 @@ namespace DXLog.net
 
         private delegate void newQsoSaved(DXQSO qso);
 
-        public CusFrmTest1()
+        public DXLbuttonbar()
         {
             InitializeComponent();
         }
 
-        public CusFrmTest1(ContestData cdata)
+        public DXLbuttonbar(ContestData cdata)
         {
             InitializeComponent();
             ColorSetTypes = new String[] { "Background", "Color", "Header back color", "Header color", "Footer back color", "Footer color", "Final score color", "Selection back color", "Selection color" };
@@ -59,31 +52,45 @@ namespace DXLog.net
             if (mainForm == null)
             {
                 mainForm = (FrmMain)(this.ParentForm == null ? this.Owner : this.ParentForm);
-                if (mainForm != null)
-                    mainForm.NewQSOSaved += new FrmMain.NewQSOSavedEvent(mainForm_NewQSOSaved);
             }
-
-
-
         }
 
-        private void mainForm_NewQSOSaved(DXQSO newQso)
+        private void F1_Click(object sender, EventArgs e)
         {
-            if (this.InvokeRequired)
-            {
-                newQsoSaved d = new newQsoSaved(mainForm_NewQSOSaved);
-                this.Invoke(d, new object[] { newQso });
-                return;
-            }
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("New QSO is saved."); 
-            sb.AppendLine(String.Format("QSO time: {0}", newQso.QSOTime.ToString("dd.MM.yyyy HH:mm:ss")));
-            sb.AppendLine(String.Format("Call worked: {0}", newQso.Callsign));
-            sb.AppendLine();
-            sb.AppendLine(String.Format("Your current score is: {0} points!", _cdata.GetFinalScore().ToString("### ### ##0")));
-            lbInfo.Text = sb.ToString();
+            int TXOnRadio = _cdata.FocusedRadio;
+            bool _RunMode = TXOnRadio == 1 ? _cdata.RadioModePrimary == 0 : _cdata.RadioModeSecondary == 0;
+            string _message = _RunMode ? _cdata.dalHeader.CWMessage1 : _cdata.dalHeader.SP_CWMessage1;
+            mainForm.SendCW(_message, _cdata.FocusedRadio, true);
         }
 
+        private void F2_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void F3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void F4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void F5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void F6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void F7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

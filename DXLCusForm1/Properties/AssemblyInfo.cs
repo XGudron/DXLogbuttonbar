@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DXLCusForm1")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("DXLbuttonbar")]
+[assembly: AssemblyDescription("Button bar for DXLog.net CW transmission")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DXLCusForm1")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyProduct("DXLbuttonbar")]
+[assembly: AssemblyCopyright("Copyright DXLog.net dev team ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
