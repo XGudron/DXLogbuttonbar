@@ -5,17 +5,16 @@ namespace DXLog.net
 {
     public partial class DXLbuttonbar : KForm
     {
-        public static String CusWinName
+        public static string CusWinName
         {
             get { return "CW button bar"; }
         }
 
-        public static Int32 CusFormID
+        public static int CusFormID
         {
             get { return 1004; }
         }
         
-        private ContestData _cdata = null;
         private Font _windowFont = new Font("Courier New", 10, FontStyle.Regular);
 
         private FrmMain mainForm = null;
@@ -30,74 +29,70 @@ namespace DXLog.net
         public DXLbuttonbar(ContestData cdata)
         {
             InitializeComponent();
-            ColorSetTypes = new String[] { "Background", "Color", "Header back color", "Header color", "Footer back color", "Footer color", "Final score color", "Selection back color", "Selection color" };
+            ColorSetTypes = new string[] { "Background", "Color", "Header back color", "Header color", "Footer back color", "Footer color", "Final score color", "Selection back color", "Selection color" };
             DefaultColors = new Color[] { Color.Turquoise, Color.Black, Color.Gray, Color.Black, Color.Silver, Color.Black, Color.Blue, Color.SteelBlue, Color.White };
-            _cdata = cdata;
-            this.FormLayoutChangeEvent += new FormLayoutChange(handle_FormLayoutChangeEvent);
+            FormLayoutChangeEvent += new FormLayoutChange(Handle_FormLayoutChangeEvent);
         }
 
-        private void handle_FormLayoutChangeEvent()
+        private void Handle_FormLayoutChangeEvent()
         {
             InitializeLayout();
         }
 
         public override void InitializeLayout()
         {
-            base.InitializeLayout(_windowFont);
-            if (base.FormLayout.FontName.Contains("Courier"))
-                _windowFont = new Font(base.FormLayout.FontName, base.FormLayout.FontSize, FontStyle.Regular);
+            InitializeLayout(_windowFont);
+            if (FormLayout.FontName.Contains("Courier"))
+                _windowFont = new Font(FormLayout.FontName, FormLayout.FontSize, FontStyle.Regular);
             else
-                _windowFont = Helper.GetSpecialFont(FontStyle.Regular, base.FormLayout.FontSize);
+                _windowFont = Helper.GetSpecialFont(FontStyle.Regular, FormLayout.FontSize);
 
             if (mainForm == null)
             {
-                mainForm = (FrmMain)(this.ParentForm == null ? this.Owner : this.ParentForm);
+                mainForm = (FrmMain)(ParentForm == null ? Owner : ParentForm);
             }
         }
 
-        private bool RunMode()
-        {
-            return (_cdata.FocusedRadio == 1) ? _cdata.RadioModePrimary == 0 : _cdata.RadioModeSecondary == 0;
-        }
-
+        // Valid arguments for SendKeyMessage are F1-F7, INSERT, PLUS, and ALTF1-F12.
+        
         private void F1_Click(object sender, EventArgs e)
         {
-            mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessage1 : _cdata.dalHeader.SP_CWMessage1, _cdata.FocusedRadio, true);
+            mainForm.SendKeyMessage(false, "F1");
         }
 
         private void F2_Click(object sender, EventArgs e)
         {
-            mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessage2 : _cdata.dalHeader.SP_CWMessage2, _cdata.FocusedRadio, true);
+            mainForm.SendKeyMessage(false, "F2");
         }
 
         private void F3_Click(object sender, EventArgs e)
         {
-            mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessage3 : _cdata.dalHeader.SP_CWMessage3, _cdata.FocusedRadio, true);
+            mainForm.SendKeyMessage(false, "F3");
         }
 
         private void F4_Click(object sender, EventArgs e)
         {
-            mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessage4 : _cdata.dalHeader.SP_CWMessage4, _cdata.FocusedRadio, true);
+            mainForm.SendKeyMessage(false, "F4");
         }
 
         private void F5_Click(object sender, EventArgs e)
         {
-            mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessage5 : _cdata.dalHeader.SP_CWMessage5, _cdata.FocusedRadio, true);
+            mainForm.SendKeyMessage(false, "F5");
         }
 
         private void F6_Click(object sender, EventArgs e)
         {
-            mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessage6 : _cdata.dalHeader.SP_CWMessage6, _cdata.FocusedRadio, true);
+            mainForm.SendKeyMessage(false, "F6");
         }
 
         private void F7_Click(object sender, EventArgs e)
         {
-            mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessage7 : _cdata.dalHeader.SP_CWMessage7, _cdata.FocusedRadio, true);
+            mainForm.SendKeyMessage(false, "F7");
         }
 
         private void Ins_Click(object sender, EventArgs e)
         {
-            mainForm.SendCW(RunMode() ? _cdata.dalHeader.CWMessageINS : _cdata.dalHeader.SP_CWMessageINS, _cdata.FocusedRadio, true);
+            mainForm.SendKeyMessage(false, "INSERT");
         }
     }
 }
