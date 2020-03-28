@@ -13,7 +13,7 @@ namespace DXLog.net
 
         public static int CusFormID
         {
-            get { return 1004; }
+            get { return 1021; }
         }
         
         private Font _windowFont = new Font("Courier New", 10, FontStyle.Regular);
