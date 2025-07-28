@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -55,6 +56,32 @@ namespace DXLog.net
 
             contextMenuStrip1.Items.RemoveByKey("fixWindowSizeToolStripMenuItem");
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+
+            F1.Text = "F1 " + mainForm.RequestMessageString("$F1", "CW");
+            F2.Text = "F2 " + mainForm.RequestMessageString("$F2", "CW");
+            F3.Text = "F3 LOC " + mainForm.RequestMessageString("$F3", "CW");
+            F4.Text = "F4 MYCAL " + mainForm.RequestMessageString("$F4", "CW");
+            F5.Text = "F5 CALL " + mainForm.RequestMessageString("$F5", "CW");
+            F6.Text = "F6 " + mainForm.RequestMessageString("$F6", "CW");
+            F7.Text = "F7 " + mainForm.RequestMessageString("$F7", "CW");
+
+            AltF1.Text = "Msg1 " + mainForm.RequestMessageString("$MSG1", "CW");
+            AltF2.Text = "Msg2 " + mainForm.RequestMessageString("$MSG2", "CW");
+            AltF3.Text = "Msg3 " + mainForm.RequestMessageString("$MSG3", "CW");
+            AltF4.Text = "Msg4 " + mainForm.RequestMessageString("$MSG4", "CW");
+            AltF5.Text = "Msg5 " + mainForm.RequestMessageString("$MSG5", "CW");
+            AltF6.Text = "Msg6 " + mainForm.RequestMessageString("$MSG6", "CW");
+            AltF7.Text = "Msg7 " + mainForm.RequestMessageString("$MSG7", "CW");
+            AltF8.Text = "Msg8 " + mainForm.RequestMessageString("$MSG8", "CW");
+            AltF9.Text = "Msg9 " + mainForm.RequestMessageString("$MSG9", "CW");
+            AltF10.Text = "Msg10 " + mainForm.RequestMessageString("$MSG10", "CW");
+            AltF11.Text = "Msg11 " + mainForm.RequestMessageString("$MSG11", "CW");
+            AltF12.Text = "Msg12 " + mainForm.RequestMessageString("$MSG12", "CW");
+
+            Ins.Text = "Ins " + mainForm.RequestMessageString("$INSERT", "CW");
+            PLus.Text = "Plus " + mainForm.RequestMessageString("$PLUS", "CW");
+
+           // mainForm.SetMainStatusText("My test string: -" + mainForm.RequestMessageString("$F3", "CW") + "-");
         }
 
         // Valid arguments for SendKeyMessage are F1-F7, INSERT, PLUS, and ALTF1-F12.
