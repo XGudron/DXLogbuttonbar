@@ -49,17 +49,24 @@
             this.AltF6 = new System.Windows.Forms.Button();
             this.AltF11 = new System.Windows.Forms.Button();
             this.AltF12 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // F1
             // 
             this.F1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.F1.Dock = System.Windows.Forms.DockStyle.Left;
             this.F1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F1.ForeColor = System.Drawing.Color.White;
-            this.F1.Location = new System.Drawing.Point(4, 5);
-            this.F1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.F1.Location = new System.Drawing.Point(0, 0);
+            this.F1.Margin = new System.Windows.Forms.Padding(4);
             this.F1.Name = "F1";
-            this.F1.Size = new System.Drawing.Size(105, 28);
+            this.F1.Size = new System.Drawing.Size(143, 75);
             this.F1.TabIndex = 2;
             this.F1.Text = "F1";
             this.F1.UseVisualStyleBackColor = false;
@@ -68,12 +75,13 @@
             // F2
             // 
             this.F2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.F2.Dock = System.Windows.Forms.DockStyle.Left;
             this.F2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F2.ForeColor = System.Drawing.Color.White;
-            this.F2.Location = new System.Drawing.Point(117, 5);
-            this.F2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.F2.Location = new System.Drawing.Point(143, 0);
+            this.F2.Margin = new System.Windows.Forms.Padding(4);
             this.F2.Name = "F2";
-            this.F2.Size = new System.Drawing.Size(105, 28);
+            this.F2.Size = new System.Drawing.Size(143, 75);
             this.F2.TabIndex = 3;
             this.F2.Text = "F2";
             this.F2.UseVisualStyleBackColor = false;
@@ -82,12 +90,13 @@
             // F3
             // 
             this.F3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.F3.Dock = System.Windows.Forms.DockStyle.Left;
             this.F3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F3.ForeColor = System.Drawing.Color.White;
-            this.F3.Location = new System.Drawing.Point(230, 5);
-            this.F3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.F3.Location = new System.Drawing.Point(286, 0);
+            this.F3.Margin = new System.Windows.Forms.Padding(4);
             this.F3.Name = "F3";
-            this.F3.Size = new System.Drawing.Size(105, 28);
+            this.F3.Size = new System.Drawing.Size(143, 75);
             this.F3.TabIndex = 4;
             this.F3.Text = "F3";
             this.F3.UseVisualStyleBackColor = false;
@@ -96,12 +105,13 @@
             // F4
             // 
             this.F4.BackColor = System.Drawing.SystemColors.Highlight;
+            this.F4.Dock = System.Windows.Forms.DockStyle.Left;
             this.F4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F4.ForeColor = System.Drawing.Color.White;
-            this.F4.Location = new System.Drawing.Point(343, 5);
-            this.F4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.F4.Location = new System.Drawing.Point(429, 0);
+            this.F4.Margin = new System.Windows.Forms.Padding(4);
             this.F4.Name = "F4";
-            this.F4.Size = new System.Drawing.Size(105, 28);
+            this.F4.Size = new System.Drawing.Size(143, 75);
             this.F4.TabIndex = 5;
             this.F4.Text = "F4";
             this.F4.UseVisualStyleBackColor = false;
@@ -110,12 +120,13 @@
             // F5
             // 
             this.F5.BackColor = System.Drawing.SystemColors.Highlight;
+            this.F5.Dock = System.Windows.Forms.DockStyle.Left;
             this.F5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F5.ForeColor = System.Drawing.Color.White;
-            this.F5.Location = new System.Drawing.Point(456, 5);
-            this.F5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.F5.Location = new System.Drawing.Point(572, 0);
+            this.F5.Margin = new System.Windows.Forms.Padding(4);
             this.F5.Name = "F5";
-            this.F5.Size = new System.Drawing.Size(105, 28);
+            this.F5.Size = new System.Drawing.Size(143, 75);
             this.F5.TabIndex = 6;
             this.F5.Text = "F5";
             this.F5.UseVisualStyleBackColor = false;
@@ -124,12 +135,13 @@
             // F6
             // 
             this.F6.BackColor = System.Drawing.SystemColors.Highlight;
+            this.F6.Dock = System.Windows.Forms.DockStyle.Left;
             this.F6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F6.ForeColor = System.Drawing.Color.White;
-            this.F6.Location = new System.Drawing.Point(569, 5);
-            this.F6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.F6.Location = new System.Drawing.Point(715, 0);
+            this.F6.Margin = new System.Windows.Forms.Padding(4);
             this.F6.Name = "F6";
-            this.F6.Size = new System.Drawing.Size(105, 28);
+            this.F6.Size = new System.Drawing.Size(143, 75);
             this.F6.TabIndex = 7;
             this.F6.Text = "F6";
             this.F6.UseVisualStyleBackColor = false;
@@ -138,12 +150,13 @@
             // F7
             // 
             this.F7.BackColor = System.Drawing.SystemColors.Highlight;
+            this.F7.Dock = System.Windows.Forms.DockStyle.Left;
             this.F7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F7.ForeColor = System.Drawing.Color.White;
-            this.F7.Location = new System.Drawing.Point(682, 5);
-            this.F7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.F7.Location = new System.Drawing.Point(858, 0);
+            this.F7.Margin = new System.Windows.Forms.Padding(4);
             this.F7.Name = "F7";
-            this.F7.Size = new System.Drawing.Size(105, 28);
+            this.F7.Size = new System.Drawing.Size(143, 75);
             this.F7.TabIndex = 8;
             this.F7.Text = "F7";
             this.F7.UseVisualStyleBackColor = false;
@@ -152,12 +165,13 @@
             // Ins
             // 
             this.Ins.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Ins.Dock = System.Windows.Forms.DockStyle.Left;
             this.Ins.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ins.ForeColor = System.Drawing.Color.White;
-            this.Ins.Location = new System.Drawing.Point(569, 112);
-            this.Ins.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Ins.Location = new System.Drawing.Point(900, 0);
+            this.Ins.Margin = new System.Windows.Forms.Padding(4);
             this.Ins.Name = "Ins";
-            this.Ins.Size = new System.Drawing.Size(105, 28);
+            this.Ins.Size = new System.Drawing.Size(105, 75);
             this.Ins.TabIndex = 9;
             this.Ins.Text = "Ins";
             this.Ins.UseVisualStyleBackColor = false;
@@ -166,12 +180,13 @@
             // PLus
             // 
             this.PLus.BackColor = System.Drawing.SystemColors.Highlight;
+            this.PLus.Dock = System.Windows.Forms.DockStyle.Left;
             this.PLus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PLus.ForeColor = System.Drawing.Color.White;
-            this.PLus.Location = new System.Drawing.Point(682, 113);
-            this.PLus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PLus.Location = new System.Drawing.Point(900, 0);
+            this.PLus.Margin = new System.Windows.Forms.Padding(4);
             this.PLus.Name = "PLus";
-            this.PLus.Size = new System.Drawing.Size(105, 28);
+            this.PLus.Size = new System.Drawing.Size(105, 75);
             this.PLus.TabIndex = 10;
             this.PLus.Text = "Plus";
             this.PLus.UseVisualStyleBackColor = false;
@@ -180,12 +195,13 @@
             // AltF1
             // 
             this.AltF1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF1.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF1.ForeColor = System.Drawing.Color.White;
-            this.AltF1.Location = new System.Drawing.Point(4, 40);
-            this.AltF1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF1.Location = new System.Drawing.Point(0, 0);
+            this.AltF1.Margin = new System.Windows.Forms.Padding(4);
             this.AltF1.Name = "AltF1";
-            this.AltF1.Size = new System.Drawing.Size(150, 28);
+            this.AltF1.Size = new System.Drawing.Size(150, 75);
             this.AltF1.TabIndex = 11;
             this.AltF1.Text = "Alt Msg 1";
             this.AltF1.UseVisualStyleBackColor = false;
@@ -194,12 +210,13 @@
             // AltF2
             // 
             this.AltF2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF2.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF2.ForeColor = System.Drawing.Color.White;
-            this.AltF2.Location = new System.Drawing.Point(162, 40);
-            this.AltF2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF2.Location = new System.Drawing.Point(150, 0);
+            this.AltF2.Margin = new System.Windows.Forms.Padding(4);
             this.AltF2.Name = "AltF2";
-            this.AltF2.Size = new System.Drawing.Size(150, 28);
+            this.AltF2.Size = new System.Drawing.Size(150, 75);
             this.AltF2.TabIndex = 12;
             this.AltF2.Text = "Alt Msg 2";
             this.AltF2.UseVisualStyleBackColor = false;
@@ -208,12 +225,13 @@
             // AltF3
             // 
             this.AltF3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF3.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF3.ForeColor = System.Drawing.Color.White;
-            this.AltF3.Location = new System.Drawing.Point(320, 40);
-            this.AltF3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF3.Location = new System.Drawing.Point(300, 0);
+            this.AltF3.Margin = new System.Windows.Forms.Padding(4);
             this.AltF3.Name = "AltF3";
-            this.AltF3.Size = new System.Drawing.Size(150, 28);
+            this.AltF3.Size = new System.Drawing.Size(150, 75);
             this.AltF3.TabIndex = 13;
             this.AltF3.Text = "Alt Msg 3";
             this.AltF3.UseVisualStyleBackColor = false;
@@ -222,12 +240,13 @@
             // AltF4
             // 
             this.AltF4.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF4.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF4.ForeColor = System.Drawing.Color.White;
-            this.AltF4.Location = new System.Drawing.Point(478, 41);
-            this.AltF4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF4.Location = new System.Drawing.Point(450, 0);
+            this.AltF4.Margin = new System.Windows.Forms.Padding(4);
             this.AltF4.Name = "AltF4";
-            this.AltF4.Size = new System.Drawing.Size(150, 28);
+            this.AltF4.Size = new System.Drawing.Size(150, 75);
             this.AltF4.TabIndex = 14;
             this.AltF4.Text = "Alt Msg 4";
             this.AltF4.UseVisualStyleBackColor = false;
@@ -236,12 +255,13 @@
             // AltF5
             // 
             this.AltF5.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF5.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF5.ForeColor = System.Drawing.Color.White;
-            this.AltF5.Location = new System.Drawing.Point(636, 41);
-            this.AltF5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF5.Location = new System.Drawing.Point(600, 0);
+            this.AltF5.Margin = new System.Windows.Forms.Padding(4);
             this.AltF5.Name = "AltF5";
-            this.AltF5.Size = new System.Drawing.Size(150, 28);
+            this.AltF5.Size = new System.Drawing.Size(150, 75);
             this.AltF5.TabIndex = 15;
             this.AltF5.Text = "Alt Msg 5";
             this.AltF5.UseVisualStyleBackColor = false;
@@ -250,12 +270,13 @@
             // AltF10
             // 
             this.AltF10.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF10.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF10.ForeColor = System.Drawing.Color.White;
-            this.AltF10.Location = new System.Drawing.Point(636, 77);
-            this.AltF10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF10.Location = new System.Drawing.Point(0, 0);
+            this.AltF10.Margin = new System.Windows.Forms.Padding(4);
             this.AltF10.Name = "AltF10";
-            this.AltF10.Size = new System.Drawing.Size(150, 28);
+            this.AltF10.Size = new System.Drawing.Size(150, 75);
             this.AltF10.TabIndex = 20;
             this.AltF10.Text = "Alt Msg 10";
             this.AltF10.UseVisualStyleBackColor = false;
@@ -264,12 +285,13 @@
             // AltF9
             // 
             this.AltF9.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF9.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF9.ForeColor = System.Drawing.Color.White;
-            this.AltF9.Location = new System.Drawing.Point(478, 76);
-            this.AltF9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF9.Location = new System.Drawing.Point(150, 0);
+            this.AltF9.Margin = new System.Windows.Forms.Padding(4);
             this.AltF9.Name = "AltF9";
-            this.AltF9.Size = new System.Drawing.Size(150, 28);
+            this.AltF9.Size = new System.Drawing.Size(150, 75);
             this.AltF9.TabIndex = 19;
             this.AltF9.Text = "Alt Msg 9";
             this.AltF9.UseVisualStyleBackColor = false;
@@ -278,12 +300,13 @@
             // AltF8
             // 
             this.AltF8.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF8.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF8.ForeColor = System.Drawing.Color.White;
-            this.AltF8.Location = new System.Drawing.Point(320, 76);
-            this.AltF8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF8.Location = new System.Drawing.Point(450, 0);
+            this.AltF8.Margin = new System.Windows.Forms.Padding(4);
             this.AltF8.Name = "AltF8";
-            this.AltF8.Size = new System.Drawing.Size(150, 28);
+            this.AltF8.Size = new System.Drawing.Size(150, 75);
             this.AltF8.TabIndex = 18;
             this.AltF8.Text = "Alt Msg 8";
             this.AltF8.UseVisualStyleBackColor = false;
@@ -292,12 +315,13 @@
             // AltF7
             // 
             this.AltF7.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF7.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF7.ForeColor = System.Drawing.Color.White;
-            this.AltF7.Location = new System.Drawing.Point(162, 76);
-            this.AltF7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF7.Location = new System.Drawing.Point(750, 0);
+            this.AltF7.Margin = new System.Windows.Forms.Padding(4);
             this.AltF7.Name = "AltF7";
-            this.AltF7.Size = new System.Drawing.Size(150, 28);
+            this.AltF7.Size = new System.Drawing.Size(150, 75);
             this.AltF7.TabIndex = 17;
             this.AltF7.Text = "Alt Msg 7";
             this.AltF7.UseVisualStyleBackColor = false;
@@ -306,12 +330,13 @@
             // AltF6
             // 
             this.AltF6.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF6.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF6.ForeColor = System.Drawing.Color.White;
-            this.AltF6.Location = new System.Drawing.Point(4, 76);
-            this.AltF6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF6.Location = new System.Drawing.Point(750, 0);
+            this.AltF6.Margin = new System.Windows.Forms.Padding(4);
             this.AltF6.Name = "AltF6";
-            this.AltF6.Size = new System.Drawing.Size(150, 28);
+            this.AltF6.Size = new System.Drawing.Size(150, 75);
             this.AltF6.TabIndex = 16;
             this.AltF6.Text = "Alt Msg 6";
             this.AltF6.UseVisualStyleBackColor = false;
@@ -320,12 +345,13 @@
             // AltF11
             // 
             this.AltF11.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF11.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF11.ForeColor = System.Drawing.Color.White;
-            this.AltF11.Location = new System.Drawing.Point(4, 112);
-            this.AltF11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF11.Location = new System.Drawing.Point(300, 0);
+            this.AltF11.Margin = new System.Windows.Forms.Padding(4);
             this.AltF11.Name = "AltF11";
-            this.AltF11.Size = new System.Drawing.Size(150, 28);
+            this.AltF11.Size = new System.Drawing.Size(150, 75);
             this.AltF11.TabIndex = 21;
             this.AltF11.Text = "Alt Msg 11";
             this.AltF11.UseVisualStyleBackColor = false;
@@ -334,50 +360,82 @@
             // AltF12
             // 
             this.AltF12.BackColor = System.Drawing.SystemColors.Highlight;
+            this.AltF12.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF12.ForeColor = System.Drawing.Color.White;
-            this.AltF12.Location = new System.Drawing.Point(162, 112);
-            this.AltF12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AltF12.Location = new System.Drawing.Point(600, 0);
+            this.AltF12.Margin = new System.Windows.Forms.Padding(4);
             this.AltF12.Name = "AltF12";
-            this.AltF12.Size = new System.Drawing.Size(150, 28);
+            this.AltF12.Size = new System.Drawing.Size(150, 75);
             this.AltF12.TabIndex = 22;
             this.AltF12.Text = "Alt Msg 12";
             this.AltF12.UseVisualStyleBackColor = false;
             this.AltF12.Click += new System.EventHandler(this.AltF12_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.F7);
+            this.panel1.Controls.Add(this.F6);
+            this.panel1.Controls.Add(this.F5);
+            this.panel1.Controls.Add(this.F4);
+            this.panel1.Controls.Add(this.F3);
+            this.panel1.Controls.Add(this.F2);
+            this.panel1.Controls.Add(this.F1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1017, 75);
+            this.panel1.TabIndex = 23;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.PLus);
+            this.panel2.Controls.Add(this.AltF6);
+            this.panel2.Controls.Add(this.AltF5);
+            this.panel2.Controls.Add(this.AltF4);
+            this.panel2.Controls.Add(this.AltF3);
+            this.panel2.Controls.Add(this.AltF2);
+            this.panel2.Controls.Add(this.AltF1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 75);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1017, 75);
+            this.panel2.TabIndex = 24;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.Ins);
+            this.panel4.Controls.Add(this.AltF7);
+            this.panel4.Controls.Add(this.AltF12);
+            this.panel4.Controls.Add(this.AltF8);
+            this.panel4.Controls.Add(this.AltF11);
+            this.panel4.Controls.Add(this.AltF9);
+            this.panel4.Controls.Add(this.AltF10);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 150);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1017, 75);
+            this.panel4.TabIndex = 26;
+            // 
             // DXLbuttonbar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 160);
-            this.Controls.Add(this.AltF12);
-            this.Controls.Add(this.AltF11);
-            this.Controls.Add(this.AltF10);
-            this.Controls.Add(this.AltF9);
-            this.Controls.Add(this.AltF8);
-            this.Controls.Add(this.AltF7);
-            this.Controls.Add(this.AltF6);
-            this.Controls.Add(this.AltF5);
-            this.Controls.Add(this.AltF4);
-            this.Controls.Add(this.AltF3);
-            this.Controls.Add(this.AltF2);
-            this.Controls.Add(this.AltF1);
-            this.Controls.Add(this.PLus);
-            this.Controls.Add(this.Ins);
-            this.Controls.Add(this.F7);
-            this.Controls.Add(this.F6);
-            this.Controls.Add(this.F5);
-            this.Controls.Add(this.F4);
-            this.Controls.Add(this.F3);
-            this.Controls.Add(this.F2);
-            this.Controls.Add(this.F1);
+            this.ClientSize = new System.Drawing.Size(1017, 230);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.FormID = 1004;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DXLbuttonbar";
             this.Text = "Message button bar";
+            this.Resize += new System.EventHandler(this.DXLbuttonbar_Resize);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -404,5 +462,8 @@
         private System.Windows.Forms.Button AltF6;
         private System.Windows.Forms.Button AltF11;
         private System.Windows.Forms.Button AltF12;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
     }
 }

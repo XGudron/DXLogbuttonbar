@@ -54,8 +54,30 @@ namespace DXLog.net
                 mainForm = (FrmMain)(ParentForm ?? Owner);
             }
 
-            contextMenuStrip1.Items.RemoveByKey("fixWindowSizeToolStripMenuItem");
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            //contextMenuStrip1.Items.RemoveByKey("fixWindowSizeToolStripMenuItem");
+            //FormBorderStyle = FormBorderStyle.FixedToolWindow;
+
+            F1.Font = _windowFont;
+            F2.Font = _windowFont;
+            F3.Font = _windowFont;
+            F4.Font = _windowFont;
+            F5.Font = _windowFont;
+            F6.Font = _windowFont;
+            F7.Font = _windowFont;
+            AltF1.Font = _windowFont;
+            AltF2.Font = _windowFont;
+            AltF3.Font = _windowFont;
+            AltF4.Font = _windowFont;
+            AltF5.Font = _windowFont;
+            AltF6.Font = _windowFont;
+            AltF7.Font = _windowFont;
+            AltF8.Font = _windowFont;
+            AltF9.Font = _windowFont;
+            AltF10.Font = _windowFont;
+            AltF11.Font = _windowFont;
+            AltF12.Font = _windowFont;
+            Ins.Font = _windowFont;
+            PLus.Font = _windowFont;
 
             F1.Text = "F1 " + mainForm.RequestMessageString("$F1", "CW");
             F2.Text = "F2 " + mainForm.RequestMessageString("$F2", "CW");
@@ -65,18 +87,18 @@ namespace DXLog.net
             F6.Text = "F6 " + mainForm.RequestMessageString("$F6", "CW");
             F7.Text = "F7 " + mainForm.RequestMessageString("$F7", "CW");
 
-            AltF1.Text = "Msg1 " + mainForm.RequestMessageString("$MSG1", "CW");
-            AltF2.Text = "Msg2 " + mainForm.RequestMessageString("$MSG2", "CW");
-            AltF3.Text = "Msg3 " + mainForm.RequestMessageString("$MSG3", "CW");
-            AltF4.Text = "Msg4 " + mainForm.RequestMessageString("$MSG4", "CW");
-            AltF5.Text = "Msg5 " + mainForm.RequestMessageString("$MSG5", "CW");
-            AltF6.Text = "Msg6 " + mainForm.RequestMessageString("$MSG6", "CW");
-            AltF7.Text = "Msg7 " + mainForm.RequestMessageString("$MSG7", "CW");
-            AltF8.Text = "Msg8 " + mainForm.RequestMessageString("$MSG8", "CW");
-            AltF9.Text = "Msg9 " + mainForm.RequestMessageString("$MSG9", "CW");
-            AltF10.Text = "Msg10 " + mainForm.RequestMessageString("$MSG10", "CW");
-            AltF11.Text = "Msg11 " + mainForm.RequestMessageString("$MSG11", "CW");
-            AltF12.Text = "Msg12 " + mainForm.RequestMessageString("$MSG12", "CW");
+            AltF1.Text = "M1 " + mainForm.RequestMessageString("$MSG1", "CW");
+            AltF2.Text = "M2 " + mainForm.RequestMessageString("$MSG2", "CW");
+            AltF3.Text = "M3 " + mainForm.RequestMessageString("$MSG3", "CW");
+            AltF4.Text = "M4 " + mainForm.RequestMessageString("$MSG4", "CW");
+            AltF5.Text = "M5 " + mainForm.RequestMessageString("$MSG5", "CW");
+            AltF6.Text = "M6 " + mainForm.RequestMessageString("$MSG6", "CW");
+            AltF7.Text = "M7 " + mainForm.RequestMessageString("$MSG7", "CW");
+            AltF8.Text = "M8 " + mainForm.RequestMessageString("$MSG8", "CW");
+            AltF9.Text = "M9 " + mainForm.RequestMessageString("$MSG9", "CW");
+            AltF10.Text = "M10 " + mainForm.RequestMessageString("$MSG10", "CW");
+            AltF11.Text = "M11 " + mainForm.RequestMessageString("$MSG11", "CW");
+            AltF12.Text = "M12 " + mainForm.RequestMessageString("$MSG12", "CW");
 
             Ins.Text = "Ins " + mainForm.RequestMessageString("$INSERT", "CW");
             PLus.Text = "Plus " + mainForm.RequestMessageString("$PLUS", "CW");
@@ -189,6 +211,38 @@ namespace DXLog.net
         private void AltF12_Click(object sender, EventArgs e)
         {
             mainForm.SendKeyMessage(false, "ALTF12");
+        }
+
+        private void DXLbuttonbar_Resize(object sender, EventArgs e)
+        {
+            int panelHeight = ClientSize.Height / 3;
+            panel1.Height = panelHeight;
+            panel2.Height = panelHeight;
+            panel4.Height = panelHeight;
+
+            int buttonMargin = F1.Margin.Left;
+            int buttonWidth = ClientSize.Width / 7;
+            F1.Width = buttonWidth;
+            F2.Width = buttonWidth;
+            F3.Width = buttonWidth;
+            F4.Width = buttonWidth;
+            F5.Width = buttonWidth;
+            F6.Width = buttonWidth;
+            F7.Width = buttonWidth;
+            AltF1.Width = buttonWidth;
+            AltF2.Width = buttonWidth;
+            AltF3.Width = buttonWidth;
+            AltF4.Width = buttonWidth;
+            AltF5.Width = buttonWidth;
+            AltF6.Width = buttonWidth;
+            AltF7.Width = buttonWidth;
+            AltF8.Width = buttonWidth;
+            AltF9.Width = buttonWidth;
+            AltF10.Width = buttonWidth;
+            AltF11.Width = buttonWidth;
+            AltF12.Width = buttonWidth;
+            Ins.Width = buttonWidth;
+            PLus.Width = buttonWidth;
         }
     }
 }
