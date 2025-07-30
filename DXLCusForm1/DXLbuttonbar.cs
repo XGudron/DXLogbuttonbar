@@ -79,26 +79,26 @@ namespace DXLog.net
             Ins.Font = _windowFont;
             PLus.Font = _windowFont;
 
-            F1.Text = "F1 " + mainForm.RequestMessageString("$F1", "CW");
-            F2.Text = "F2 " + mainForm.RequestMessageString("$F2", "CW");
-            F3.Text = "F3 LOC " + mainForm.RequestMessageString("$F3", "CW");
-            F4.Text = "F4 MYCAL " + mainForm.RequestMessageString("$F4", "CW");
-            F5.Text = "F5 CALL " + mainForm.RequestMessageString("$F5", "CW");
-            F6.Text = "F6 " + mainForm.RequestMessageString("$F6", "CW");
-            F7.Text = "F7 " + mainForm.RequestMessageString("$F7", "CW");
+            F1.Text = "F1 CQ";
+            F2.Text = "F2 5NN NR";
+            F3.Text = "F3 LOC";
+            F4.Text = "F4 MYCALL";
+            F5.Text = "F5 CALL";
+            F6.Text = "F6 NR?";
+            F7.Text = "F7 ?";
 
-            AltF1.Text = "M1 " + mainForm.RequestMessageString("$MSG1", "CW");
-            AltF2.Text = "M2 " + mainForm.RequestMessageString("$MSG2", "CW");
-            AltF3.Text = "M3 " + mainForm.RequestMessageString("$MSG3", "CW");
-            AltF4.Text = "M4 " + mainForm.RequestMessageString("$MSG4", "CW");
-            AltF5.Text = "M5 " + mainForm.RequestMessageString("$MSG5", "CW");
-            AltF6.Text = "M6 " + mainForm.RequestMessageString("$MSG6", "CW");
-            AltF7.Text = "M7 " + mainForm.RequestMessageString("$MSG7", "CW");
-            AltF8.Text = "M8 " + mainForm.RequestMessageString("$MSG8", "CW");
-            AltF9.Text = "M9 " + mainForm.RequestMessageString("$MSG9", "CW");
-            AltF10.Text = "M10 " + mainForm.RequestMessageString("$MSG10", "CW");
-            AltF11.Text = "M11 " + mainForm.RequestMessageString("$MSG11", "CW");
-            AltF12.Text = "M12 " + mainForm.RequestMessageString("$MSG12", "CW");
+            AltF1.Text = "" + mainForm.RequestMessageString("$MSG1", "CW");
+            AltF2.Text = "" + mainForm.RequestMessageString("$MSG2", "CW");
+            AltF3.Text = "" + mainForm.RequestMessageString("$MSG3", "CW");
+            AltF4.Text = "" + mainForm.RequestMessageString("$MSG4", "CW");
+            AltF5.Text = "" + mainForm.RequestMessageString("$MSG5", "CW");
+            AltF6.Text = "" + mainForm.RequestMessageString("$MSG6", "CW");
+            AltF7.Text = "" + mainForm.RequestMessageString("$MSG7", "CW");
+            AltF8.Text = "" + mainForm.RequestMessageString("$MSG8", "CW");
+            AltF9.Text = "" + mainForm.RequestMessageString("$MSG9", "CW");
+            AltF10.Text = "" + mainForm.RequestMessageString("$MSG10", "CW");
+            AltF11.Text = "" + mainForm.RequestMessageString("$MSG11", "CW");
+            AltF12.Text = "" + mainForm.RequestMessageString("$MSG12", "CW");
 
             Ins.Text = "Ins " + mainForm.RequestMessageString("$INSERT", "CW");
             PLus.Text = "Plus " + mainForm.RequestMessageString("$PLUS", "CW");

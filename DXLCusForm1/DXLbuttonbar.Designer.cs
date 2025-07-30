@@ -273,7 +273,7 @@
             this.AltF10.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF10.ForeColor = System.Drawing.Color.White;
-            this.AltF10.Location = new System.Drawing.Point(0, 0);
+            this.AltF10.Location = new System.Drawing.Point(450, 0);
             this.AltF10.Margin = new System.Windows.Forms.Padding(4);
             this.AltF10.Name = "AltF10";
             this.AltF10.Size = new System.Drawing.Size(150, 75);
@@ -288,7 +288,7 @@
             this.AltF9.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF9.ForeColor = System.Drawing.Color.White;
-            this.AltF9.Location = new System.Drawing.Point(150, 0);
+            this.AltF9.Location = new System.Drawing.Point(300, 0);
             this.AltF9.Margin = new System.Windows.Forms.Padding(4);
             this.AltF9.Name = "AltF9";
             this.AltF9.Size = new System.Drawing.Size(150, 75);
@@ -303,7 +303,7 @@
             this.AltF8.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF8.ForeColor = System.Drawing.Color.White;
-            this.AltF8.Location = new System.Drawing.Point(450, 0);
+            this.AltF8.Location = new System.Drawing.Point(150, 0);
             this.AltF8.Margin = new System.Windows.Forms.Padding(4);
             this.AltF8.Name = "AltF8";
             this.AltF8.Size = new System.Drawing.Size(150, 75);
@@ -318,7 +318,7 @@
             this.AltF7.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF7.ForeColor = System.Drawing.Color.White;
-            this.AltF7.Location = new System.Drawing.Point(750, 0);
+            this.AltF7.Location = new System.Drawing.Point(0, 0);
             this.AltF7.Margin = new System.Windows.Forms.Padding(4);
             this.AltF7.Name = "AltF7";
             this.AltF7.Size = new System.Drawing.Size(150, 75);
@@ -348,7 +348,7 @@
             this.AltF11.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF11.ForeColor = System.Drawing.Color.White;
-            this.AltF11.Location = new System.Drawing.Point(300, 0);
+            this.AltF11.Location = new System.Drawing.Point(600, 0);
             this.AltF11.Margin = new System.Windows.Forms.Padding(4);
             this.AltF11.Name = "AltF11";
             this.AltF11.Size = new System.Drawing.Size(150, 75);
@@ -363,7 +363,7 @@
             this.AltF12.Dock = System.Windows.Forms.DockStyle.Left;
             this.AltF12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AltF12.ForeColor = System.Drawing.Color.White;
-            this.AltF12.Location = new System.Drawing.Point(600, 0);
+            this.AltF12.Location = new System.Drawing.Point(750, 0);
             this.AltF12.Margin = new System.Windows.Forms.Padding(4);
             this.AltF12.Name = "AltF12";
             this.AltF12.Size = new System.Drawing.Size(150, 75);
@@ -405,12 +405,12 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.Ins);
-            this.panel4.Controls.Add(this.AltF7);
             this.panel4.Controls.Add(this.AltF12);
-            this.panel4.Controls.Add(this.AltF8);
             this.panel4.Controls.Add(this.AltF11);
-            this.panel4.Controls.Add(this.AltF9);
             this.panel4.Controls.Add(this.AltF10);
+            this.panel4.Controls.Add(this.AltF9);
+            this.panel4.Controls.Add(this.AltF8);
+            this.panel4.Controls.Add(this.AltF7);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 150);
             this.panel4.Name = "panel4";
