@@ -35,8 +35,6 @@
             this.F5 = new System.Windows.Forms.Button();
             this.F6 = new System.Windows.Forms.Button();
             this.F7 = new System.Windows.Forms.Button();
-            this.Ins = new System.Windows.Forms.Button();
-            this.PLus = new System.Windows.Forms.Button();
             this.AltF1 = new System.Windows.Forms.Button();
             this.AltF2 = new System.Windows.Forms.Button();
             this.AltF3 = new System.Windows.Forms.Button();
@@ -161,36 +159,6 @@
             this.F7.Text = "F7";
             this.F7.UseVisualStyleBackColor = false;
             this.F7.Click += new System.EventHandler(this.F7_Click);
-            // 
-            // Ins
-            // 
-            this.Ins.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Ins.Dock = System.Windows.Forms.DockStyle.Left;
-            this.Ins.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ins.ForeColor = System.Drawing.Color.White;
-            this.Ins.Location = new System.Drawing.Point(900, 0);
-            this.Ins.Margin = new System.Windows.Forms.Padding(4);
-            this.Ins.Name = "Ins";
-            this.Ins.Size = new System.Drawing.Size(105, 75);
-            this.Ins.TabIndex = 9;
-            this.Ins.Text = "Ins";
-            this.Ins.UseVisualStyleBackColor = false;
-            this.Ins.Click += new System.EventHandler(this.Ins_Click);
-            // 
-            // PLus
-            // 
-            this.PLus.BackColor = System.Drawing.SystemColors.Highlight;
-            this.PLus.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PLus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PLus.ForeColor = System.Drawing.Color.White;
-            this.PLus.Location = new System.Drawing.Point(900, 0);
-            this.PLus.Margin = new System.Windows.Forms.Padding(4);
-            this.PLus.Name = "PLus";
-            this.PLus.Size = new System.Drawing.Size(105, 75);
-            this.PLus.TabIndex = 10;
-            this.PLus.Text = "Plus";
-            this.PLus.UseVisualStyleBackColor = false;
-            this.PLus.Click += new System.EventHandler(this.Plus_Click);
             // 
             // AltF1
             // 
@@ -389,7 +357,6 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.PLus);
             this.panel2.Controls.Add(this.AltF6);
             this.panel2.Controls.Add(this.AltF5);
             this.panel2.Controls.Add(this.AltF4);
@@ -404,7 +371,6 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.Ins);
             this.panel4.Controls.Add(this.AltF12);
             this.panel4.Controls.Add(this.AltF11);
             this.panel4.Controls.Add(this.AltF10);
@@ -448,8 +414,6 @@
         private System.Windows.Forms.Button F5;
         private System.Windows.Forms.Button F6;
         private System.Windows.Forms.Button F7;
-        private System.Windows.Forms.Button Ins;
-        private System.Windows.Forms.Button PLus;
         private System.Windows.Forms.Button AltF1;
         private System.Windows.Forms.Button AltF2;
         private System.Windows.Forms.Button AltF3;

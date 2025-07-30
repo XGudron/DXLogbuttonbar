@@ -76,8 +76,6 @@ namespace DXLog.net
             AltF10.Font = _windowFont;
             AltF11.Font = _windowFont;
             AltF12.Font = _windowFont;
-            Ins.Font = _windowFont;
-            PLus.Font = _windowFont;
 
             F1.Text = "F1 CQ";
             F2.Text = "F2 5NN NR";
@@ -99,9 +97,6 @@ namespace DXLog.net
             AltF10.Text = "" + mainForm.RequestMessageString("$MSG10", "CW");
             AltF11.Text = "" + mainForm.RequestMessageString("$MSG11", "CW");
             AltF12.Text = "" + mainForm.RequestMessageString("$MSG12", "CW");
-
-            Ins.Text = "Ins " + mainForm.RequestMessageString("$INSERT", "CW");
-            PLus.Text = "Plus " + mainForm.RequestMessageString("$PLUS", "CW");
 
            // mainForm.SetMainStatusText("My test string: -" + mainForm.RequestMessageString("$F3", "CW") + "-");
         }
@@ -229,6 +224,8 @@ namespace DXLog.net
             F5.Width = buttonWidth;
             F6.Width = buttonWidth;
             F7.Width = buttonWidth;
+
+            buttonWidth = ClientSize.Width / 6;
             AltF1.Width = buttonWidth;
             AltF2.Width = buttonWidth;
             AltF3.Width = buttonWidth;
@@ -241,8 +238,6 @@ namespace DXLog.net
             AltF10.Width = buttonWidth;
             AltF11.Width = buttonWidth;
             AltF12.Width = buttonWidth;
-            Ins.Width = buttonWidth;
-            PLus.Width = buttonWidth;
         }
     }
 }
